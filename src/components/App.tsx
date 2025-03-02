@@ -1,3 +1,6 @@
+//import.meta.glob is lazy-loading but eager: true sets it to import at build time
+const images = import.meta.glob("../assets/images/*.webp", { eager: true });
+
 import "../index.css";
 
 export default function App() {
