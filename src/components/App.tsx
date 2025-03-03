@@ -12,13 +12,11 @@ import "../index.css";
 export default function App() {
   return (
     <>
-      <div
-        className="grid-container grid place-items-center 
-      h-screen bg-[#f5f5f5]"
-      >
+      <div className="grid-container grid place-items-center grid-cols-4 mx-auto min-h-screen bg-[#f5f5f5]">
+        {/* For mobile, stack cards vertically */}
         <div
           className="item1 bg-[#faeee2] w-60 h-80 flex flex-col items-top 
-        items-center justify-center rounded-2xl"
+        items-center justify-center rounded-2xl p-6 "
         >
           <h1 className="text-4xl font-medium font-[DMSans] text-left justify-center mt-2 m-5">
             Create and schedule content{" "}
